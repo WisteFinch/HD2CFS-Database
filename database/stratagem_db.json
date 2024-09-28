@@ -1,0 +1,580 @@
+{
+    "type": "database",
+    "name": "stratagem_db",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "stratagem_table",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE stratagem_table (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT NOT NULL, nameZh TEXT NOT NULL, icon TEXT NOT NULL, steps TEXT NOT NULL DEFAULT \"[]\")",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "nameZh",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "icon",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "steps",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT \"[]\""
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Reinforce",
+                    "增援",
+                    "reinforce",
+                    "[1,2,4,3,1]"
+                ],
+                [
+                    2,
+                    "SOS Beacon",
+                    "S.O.S.求救信标",
+                    "sos_beacon",
+                    "[1,2,4,1]"
+                ],
+                [
+                    3,
+                    "Resupply",
+                    "重新补给",
+                    "resupply",
+                    "[2,2,1,4]"
+                ],
+                [
+                    4,
+                    "Eagle Rearm",
+                    "重新武装“飞鹰”",
+                    "eagle_rearm",
+                    "[1,1,3,1,4]"
+                ],
+                [
+                    5,
+                    "SSSD Delivery",
+                    "运送超级固态硬盘",
+                    "upload_data",
+                    "[2,2,2,1,1]"
+                ],
+                [
+                    6,
+                    "Prospecting Drill",
+                    "勘探钻机",
+                    "prospecting_drill",
+                    "[2,2,3,4,2,2]"
+                ],
+                [
+                    7,
+                    "Super Earth Flag",
+                    "超级地球旗帜",
+                    "super_earth_flag",
+                    "[2,1,2,1]"
+                ],
+                [
+                    8,
+                    "Hellbomb",
+                    "地狱火炸弹",
+                    "hellbomb",
+                    "[2,1,3,2,1,4,2,1]"
+                ],
+                [
+                    9,
+                    "Upload Data",
+                    "上传数据",
+                    "upload_data",
+                    "[3,4,1,1,1]"
+                ],
+                [
+                    10,
+                    "Seismic Probe",
+                    "地震探测仪",
+                    "seismic_probe",
+                    "[1,1,3,4,2,2]"
+                ],
+                [
+                    11,
+                    "Orbital Illumination Flare",
+                    "轨道照明弹",
+                    "orbital_illumination_flare",
+                    "[4,4,3,3]"
+                ],
+                [
+                    12,
+                    "SEAF Artillery",
+                    "超级地球武装部队大炮",
+                    "seaf_artillery",
+                    "[4,1,1,2]"
+                ],
+                [
+                    13,
+                    "Dark Fluid Vessel",
+                    "暗流体背包",
+                    "dark_fluid_vessel",
+                    "[1,3,4,2,1,1]"
+                ],
+                [
+                    14,
+                    "Tectonic Drill",
+                    "勘探钻机",
+                    "tectonic_drill",
+                    "[1,2,1,2,1,2]"
+                ],
+                [
+                    15,
+                    "Hive Breaker Drill",
+                    "“虫窝破裂者”钻机",
+                    "prospecting_drill",
+                    "[3,1,2,4,2,2]"
+                ],
+                [
+                    1001,
+                    "Airburst Rocket Launcher",
+                    "空爆火箭弹发射器",
+                    "airburst_rocket_launcher",
+                    "[2,1,1,3,4]"
+                ],
+                [
+                    1002,
+                    "Autocannon",
+                    "机炮",
+                    "autocannon",
+                    "[2,3,2,1,1,4]"
+                ],
+                [
+                    1003,
+                    "Expendable Anti-Tank",
+                    "消耗性反坦克武器",
+                    "expendable_anti_tank",
+                    "[2,2,3,1,4]"
+                ],
+                [
+                    1004,
+                    "Flamethrower",
+                    "火焰喷射器",
+                    "flamethrower",
+                    "[2,3,1,2,1]"
+                ],
+                [
+                    1005,
+                    "Laser Cannon",
+                    "激光大炮",
+                    "laser_cannon",
+                    "[2,3,2,1,3]"
+                ],
+                [
+                    1006,
+                    "Stalwart",
+                    "盟友",
+                    "stalwart",
+                    "[2,3,2,1,1,3]"
+                ],
+                [
+                    1007,
+                    "Machine Gun",
+                    "机枪",
+                    "machine_gun",
+                    "[2,3,2,1,4]"
+                ],
+                [
+                    1008,
+                    "Arc Thrower",
+                    "电弧发射器",
+                    "arc_thrower",
+                    "[2,4,2,1,3,3]"
+                ],
+                [
+                    1009,
+                    "Grenade Launcher",
+                    "榴弹发射器",
+                    "grenade_launcher",
+                    "[2,3,1,3,2]"
+                ],
+                [
+                    1010,
+                    "Anti-Material Rifle",
+                    "反器材步枪",
+                    "anti_materiel_rifle",
+                    "[2,3,4,1,2]"
+                ],
+                [
+                    1011,
+                    "Railgun",
+                    "磁轨炮",
+                    "railgun",
+                    "[2,4,2,1,3,4]"
+                ],
+                [
+                    1012,
+                    "Recoilless Rifle",
+                    "无后座力步枪",
+                    "recoilless_rifle",
+                    "[2,3,4,4,3]"
+                ],
+                [
+                    1013,
+                    "Spear",
+                    "飞矛",
+                    "spear",
+                    "[2,2,1,2,2]"
+                ],
+                [
+                    1014,
+                    "Quasar Cannon",
+                    "类星体加农炮",
+                    "quasar_cannon",
+                    "[2,2,1,3,4]"
+                ],
+                [
+                    1015,
+                    "Heavy Machine Gun",
+                    "重机枪",
+                    "heavy_machine_gun",
+                    "[2,3,1,2,2]"
+                ],
+                [
+                    1016,
+                    "Commando",
+                    "突击兵",
+                    "commando",
+                    "[2,3,1,2,4]"
+                ],
+                [
+                    1101,
+                    "\"Guard Dog\" Rover",
+                    "“护卫犬”漫游车",
+                    "guard_dog_rover",
+                    "[2,1,3,1,4,4]"
+                ],
+                [
+                    1102,
+                    "\"Guard Dog\"",
+                    "“护卫犬”",
+                    "guard_dog",
+                    "[2,1,3,1,4,2]"
+                ],
+                [
+                    1103,
+                    "Jump Pack",
+                    "喷射背包",
+                    "jump_pack",
+                    "[2,1,1,2,1]"
+                ],
+                [
+                    1104,
+                    "Supply Pack",
+                    "补给背包",
+                    "supply_pack",
+                    "[2,3,2,1,1,2]"
+                ],
+                [
+                    1105,
+                    "Shield Generator Pack",
+                    "防护罩生成器",
+                    "shield_generator_pack",
+                    "[2,1,3,4,3,4]"
+                ],
+                [
+                    1106,
+                    "Ballistic Shield Backpack",
+                    "防弹护盾背包",
+                    "ballistic_shield_backpack",
+                    "[2,3,2,2,1,3]"
+                ],
+                [
+                    1201,
+                    "Patriot Exosuit",
+                    "“爱国者”外骨骼装甲",
+                    "patriot_exosuit",
+                    "[3,2,4,1,3,2,2]"
+                ],
+                [
+                    1202,
+                    "Emancipator Exosuit",
+                    "“解放者”外骨骼装甲",
+                    "emancipator_exosuit",
+                    "[3,2,4,1,3,2,1]"
+                ],
+                [
+                    2001,
+                    "Eagle Strafing Run",
+                    "“飞鹰”机枪扫射",
+                    "eagle_strafing_run",
+                    "[1,4,4]"
+                ],
+                [
+                    2002,
+                    "Eagle Airstrike",
+                    "“飞鹰”空袭",
+                    "eagle_airstrike",
+                    "[1,4,2,4]"
+                ],
+                [
+                    2003,
+                    "Eagle Cluster Bomb",
+                    "“飞鹰”集束炸弹",
+                    "eagle_cluster_bomb",
+                    "[1,4,2,2,4]"
+                ],
+                [
+                    2004,
+                    "Eagle Napalm Strike",
+                    "“飞鹰”凝固汽油弹空袭",
+                    "eagle_napalm_airstrike",
+                    "[1,4,2,1]"
+                ],
+                [
+                    2005,
+                    "Eagle Smoke Strike",
+                    "“飞鹰”烟雾攻击",
+                    "eagle_smoke_strike",
+                    "[1,4,1,2]"
+                ],
+                [
+                    2006,
+                    "Eagle 110MM Rocket Pods",
+                    "“飞鹰”110MM火箭巢",
+                    "eagle_110mm_rocket_pods",
+                    "[1,4,1,3]"
+                ],
+                [
+                    2007,
+                    "Eagle 500kg Bomb",
+                    "“飞鹰”500KG炸弹",
+                    "eagle_500kg_bomb",
+                    "[1,4,2,2,2]"
+                ],
+                [
+                    2101,
+                    "Orbital Precision Strike",
+                    "轨道精确攻击",
+                    "orbital_precision_strike",
+                    "[4,4,1]"
+                ],
+                [
+                    2102,
+                    "Orbital Airburst Strike",
+                    "轨道空爆攻击",
+                    "orbital_airburst_strike",
+                    "[4,4,4]"
+                ],
+                [
+                    2103,
+                    "Orbital 120MM HE Barrage",
+                    "轨道120MM高爆弹火力网",
+                    "orbital_120mm_he_barrage",
+                    "[4,4,2,3,4,2]"
+                ],
+                [
+                    2104,
+                    "Orbital 380MM HE Barrage",
+                    "轨道380MM高爆弹火力网",
+                    "orbital_380mm_he_barrage",
+                    "[4,2,1,1,3,2,2]"
+                ],
+                [
+                    2105,
+                    "Orbital Walking Barrage",
+                    "轨道游走火力网",
+                    "orbital_walking_barrage",
+                    "[4,2,4,2,4,2]"
+                ],
+                [
+                    2106,
+                    "Orbital Laser",
+                    "轨道激光炮",
+                    "orbital_laser",
+                    "[4,2,1,4,2]"
+                ],
+                [
+                    2107,
+                    "Orbital Railcannon Strike",
+                    "轨道炮攻击",
+                    "orbital_railcannon_strike",
+                    "[4,1,2,2,4]"
+                ],
+                [
+                    2108,
+                    "Orbital Gatling Barrage",
+                    "轨道加特林火力网",
+                    "orbital_gatling_barrage",
+                    "[4,2,3,1,1]"
+                ],
+                [
+                    2109,
+                    "Orbital Gas Strike",
+                    "轨道毒气攻击",
+                    "orbital_gas_strike",
+                    "[4,4,2,4]"
+                ],
+                [
+                    2110,
+                    "Orbital EMS Strike",
+                    "轨道电磁冲击波攻击",
+                    "orbital_ems_strike",
+                    "[4,4,3,2]"
+                ],
+                [
+                    2111,
+                    "Orbital Smoke Strike",
+                    "轨道烟雾攻击",
+                    "orbital_smoke_strike",
+                    "[4,4,2,1]"
+                ],
+                [
+                    2112,
+                    "Orbital Napalm Barrage",
+                    "轨道凝固汽油弹火力网",
+                    "orbital_napalm_barrage",
+                    "[4,4,2,3,4,1]"
+                ],
+                [
+                    3001,
+                    "Tesla Tower",
+                    "特斯拉塔",
+                    "tesla_tower",
+                    "[2,1,4,1,3,4]"
+                ],
+                [
+                    3002,
+                    "Mortar Sentry",
+                    "迫击哨戒炮",
+                    "mortar_sentry",
+                    "[2,1,4,4,2]"
+                ],
+                [
+                    3003,
+                    "EMS Mortar Sentry",
+                    "电磁冲击波迫击哨戒炮",
+                    "ems_mortar_sentry",
+                    "[2,1,4,2,4]"
+                ],
+                [
+                    3004,
+                    "Machine Gun Sentry",
+                    "哨戒机枪",
+                    "machine_gun_sentry",
+                    "[2,1,4,4,1]"
+                ],
+                [
+                    3005,
+                    "Gatling Sentry",
+                    "加特林哨戒炮",
+                    "gatling_sentry",
+                    "[2,1,4,3]"
+                ],
+                [
+                    3006,
+                    "Anti-Personnel Minefield",
+                    "反步兵地雷",
+                    "anti_personnel_minefield",
+                    "[2,3,1,4]"
+                ],
+                [
+                    3007,
+                    "Incendiary Mines",
+                    "燃烧地雷",
+                    "incendiary_mines",
+                    "[2,3,3,2]"
+                ],
+                [
+                    3008,
+                    "Shield Generator Relay",
+                    "防护罩生成中继器",
+                    "shield_generator_relay",
+                    "[2,2,3,4,3,4]"
+                ],
+                [
+                    3009,
+                    "HMG Emplacement",
+                    "重机枪部署支架",
+                    "hmg_emplacement",
+                    "[2,1,3,4,4,3]"
+                ],
+                [
+                    3010,
+                    "Autocannon Sentry",
+                    "自动哨戒炮",
+                    "autocannon_sentry",
+                    "[2,1,4,1,3,1]"
+                ],
+                [
+                    3011,
+                    "Rocket Sentry",
+                    "火箭哨戒炮",
+                    "rocket_sentry",
+                    "[2,1,4,4,3]"
+                ],
+                [
+                    3012,
+                    "Anti Tank Mines",
+                    "反坦克地雷",
+                    "anti_tank_mines",
+                    "[2,3,1,1]"
+                ],
+                [
+                    4001,
+                    "Sterilizer",
+                    "灭菌器",
+                    "sterilizer",
+                    "[2,3,1,2,3]"
+                ],
+                [
+                    4002,
+                    "\"Guard Dog\" Dog Breath",
+                    "“护卫犬”腐息",
+                    "guard_dog_dog_breath",
+                    "[2,1,3,1,4,1]"
+                ]
+            ]
+        }
+    ]
+}

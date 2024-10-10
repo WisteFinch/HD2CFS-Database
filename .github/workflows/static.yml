@@ -41,7 +41,7 @@ jobs:
           isAbsolutePath: false
           file: 'index.json'
           content: |
-            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/"}
+            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd2_db"}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

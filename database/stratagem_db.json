@@ -555,7 +555,7 @@
                 ],
                 [
                     3012,
-                    "Anti Tank Mines",
+                    "Anti-Tank Mines",
                     "反坦克地雷",
                     "anti_tank_mines",
                     "[2,3,1,1]"
@@ -573,6 +573,27 @@
                     "“护卫犬”腐息",
                     "guard_dog_dog_breath",
                     "[2,1,3,1,4,1]"
+                ],
+                [
+                    4011,
+                    "Directional Shield",
+                    "定向护盾",
+                    "directional_shield",
+                    "[2,1,3,4,1,1]"
+                ],
+                [
+                    4012,
+                    "Flame Sentry",
+                    "火焰喷射哨戒炮",
+                    "flame_sentry",
+                    "[2,1,4,2,1,1]"
+                ],
+                [
+                    4013,
+                    "Anti-Tank Emplacement",
+                    "反坦克炮台",
+                    "anti_tank_emplacement",
+                    "[2,1,3,4,4,4]"
                 ]
             ]
         }

@@ -615,6 +615,13 @@
                     "反坦克炮台",
                     "anti_tank_emplacement",
                     "[2,1,3,4,4,4]"
+                ],
+                [
+                    4021,
+                    "Portable Hellbomb",
+                    "便携式地狱火炸弹",
+                    "portable_hellbomb",
+                    "[2,4,1,1,1]"
                 ]
             ]
         }

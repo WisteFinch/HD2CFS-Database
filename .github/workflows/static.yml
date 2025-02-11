@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Deploy content to GitHub Pages & Cloudflare Pages
 name: Deploy static content to Pages
 
 on:
@@ -35,8 +35,10 @@ jobs:
     steps:
       - name: Get date
         run: echo "MY_DATE=$(date +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_ENV
+        
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Create json
         uses: 1arp/create-a-file-action@0.4.5
         with:
@@ -45,13 +47,25 @@ jobs:
           file: 'index.json'
           content: |
             {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd2_db", "nameEn":"Helldivers2 Stratagems Database", "nameZh":"绝地潜兵2战备数据库"}
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./ --project-name=cfsdb-hd2
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

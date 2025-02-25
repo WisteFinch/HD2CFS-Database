@@ -1,6 +1,6 @@
 {
     "type": "database",
-    "name": "stratagem_db",
+    "name": "HD2",
     "objects": [
         {
             "type": "table",
@@ -172,7 +172,7 @@
                     15,
                     "Hive Breaker Drill",
                     "“虫窝破裂者”钻机",
-                    "prospecting_drill_2",
+                    "hive_breaker_drill_2",
                     "[3,1,2,4,2,2]"
                 ],
                 [

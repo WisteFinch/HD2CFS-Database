@@ -499,83 +499,83 @@
                 ],
                 [
                     3002,
-                    "Mortar Sentry",
-                    "迫击哨戒炮",
-                    "mortar_sentry",
-                    "[2,1,4,4,2]"
-                ],
-                [
-                    3003,
-                    "EMS Mortar Sentry",
-                    "电磁冲击波迫击哨戒炮",
-                    "ems_mortar_sentry",
-                    "[2,1,4,2,4]"
-                ],
-                [
-                    3004,
-                    "Machine Gun Sentry",
-                    "哨戒机枪",
-                    "machine_gun_sentry",
-                    "[2,1,4,4,1]"
-                ],
-                [
-                    3005,
-                    "Gatling Sentry",
-                    "加特林哨戒炮",
-                    "gatling_sentry",
-                    "[2,1,4,3]"
-                ],
-                [
-                    3006,
-                    "Anti-Personnel Minefield",
-                    "反步兵地雷",
-                    "anti_personnel_minefield",
-                    "[2,3,1,4]"
-                ],
-                [
-                    3007,
-                    "Incendiary Mines",
-                    "燃烧地雷",
-                    "incendiary_mines",
-                    "[2,3,3,2]"
-                ],
-                [
-                    3008,
                     "Shield Generator Relay",
                     "防护罩生成中继器",
                     "shield_generator_relay",
                     "[2,2,3,4,3,4]"
                 ],
                 [
-                    3009,
+                    3003,
                     "HMG Emplacement",
                     "重机枪部署支架",
                     "hmg_emplacement",
                     "[2,1,3,4,4,3]"
                 ],
                 [
-                    3010,
+                    3101,
+                    "Machine Gun Sentry",
+                    "哨戒机枪",
+                    "machine_gun_sentry",
+                    "[2,1,4,4,1]"
+                ],
+                [
+                    3102,
+                    "Gatling Sentry",
+                    "加特林哨戒炮",
+                    "gatling_sentry",
+                    "[2,1,4,3]"
+                ],
+                [
+                    3103,
                     "Autocannon Sentry",
                     "自动哨戒炮",
                     "autocannon_sentry",
                     "[2,1,4,1,3,1]"
                 ],
                 [
-                    3011,
+                    3104,
                     "Rocket Sentry",
                     "火箭哨戒炮",
                     "rocket_sentry",
                     "[2,1,4,4,3]"
                 ],
                 [
-                    3012,
+                    3201,
+                    "Mortar Sentry",
+                    "迫击哨戒炮",
+                    "mortar_sentry",
+                    "[2,1,4,4,2]"
+                ],
+                [
+                    3202,
+                    "EMS Mortar Sentry",
+                    "电磁冲击波迫击哨戒炮",
+                    "ems_mortar_sentry",
+                    "[2,1,4,2,4]"
+                ],
+                [
+                    3301,
+                    "Anti-Personnel Minefield",
+                    "反步兵地雷",
+                    "anti_personnel_minefield",
+                    "[2,3,1,4]"
+                ],
+                [
+                    3302,
+                    "Incendiary Mines",
+                    "燃烧地雷",
+                    "incendiary_mines",
+                    "[2,3,3,2]"
+                ],
+                [
+                    3303,
                     "Anti-Tank Mines",
                     "反坦克地雷",
                     "anti_tank_mines",
                     "[2,3,1,1]"
                 ],
                 [
-                    3013,
+                    3304,
                     "Gas Mines",
                     "毒气地雷",
                     "gas_mines",

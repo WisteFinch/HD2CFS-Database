@@ -582,6 +582,13 @@
                     "[2,3,3,4]"
                 ],
                 [
+                    3401,
+                    "Grenadier Battlement",
+                    "掷弹兵防卫墙",
+                    "grenadier_battlement",
+                    "[2,4,2,3,4]"
+                ],
+                [
                     4001,
                     "Sterilizer",
                     "灭菌器",

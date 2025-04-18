@@ -46,7 +46,7 @@ jobs:
           isAbsolutePath: false
           file: 'index.json'
           content: |
-            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd2_db", "nameEn":"Helldivers2 Stratagems Database", "nameZh":"绝地潜兵2战备数据库"}
+            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd2_db", "nameEn":"Helldivers 2 Stratagems", "nameZh":"绝地潜兵2战备"}
       
       - name: Setup Pages
         uses: actions/configure-pages@v5

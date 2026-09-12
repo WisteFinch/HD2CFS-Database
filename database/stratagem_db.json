@@ -525,6 +525,14 @@
                     1101
                 ],
                 [
+                    2008,
+                    "Eagle Gas Strike",
+                    "“飞鹰”毒气空袭",
+                    "eagle_gas_strike",
+                    "[1,4,3,4]",
+                    0
+                ],
+                [
                     2101,
                     "Orbital Precision Strike",
                     "轨道精确攻击",
